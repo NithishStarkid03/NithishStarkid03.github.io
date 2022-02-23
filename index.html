@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO The Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>
+        <center>The XO GAME</center>
+    </h1>
+    <div class="grids">
+        <div class="tile" id="a" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+        <div class="tile" id="b" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+        <div class="tile" id="c" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+
+        <div class="tile" id="d" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+        <div class="tile" id="e" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+        <div class="tile" id="f" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+
+        <div class="tile" id="g" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+        <div class="tile" id="h" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+        <div class="tile" id="i" ondrop="droppoint(event)" ondragover="allowdrop(event)"></div>
+    </div>
+    <div class="buttons">
+        <button class="btn" id='O' draggable="true" value="O" ondragstart="dragpoint(event)"
+            ondragend="dragover(event)">O</button>
+        <button class="btn" id='X' draggable="true" value="X" ondragstart="dragpoint(event)"
+            ondragend="dragover(event)">X</button>
+    </div>
+    <h5 style="position:fixed; bottom: 0; right: 0;padding-right: 20px; ">a starkid creation</h5>
+</body>
+
+</html>

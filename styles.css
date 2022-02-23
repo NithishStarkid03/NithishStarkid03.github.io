@@ -1,0 +1,60 @@
+*{
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ body{
+     background-color: aquamarine;
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     padding: 1em;
+     font-size: clamp(.5rem,2.5vmin,1.5rem);
+ }
+ 
+
+.grids{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    grid-template-columns: repeat(3,5em);
+    grid-template-rows: repeat(3,5em);
+    gap: 0.5em;
+    margin-top: 4em;
+}
+.tile{
+background-color: black;
+color: whitesmoke;
+border: 0.25em solid blueviolet;
+font-size: 2em;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.buttons{
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,5em);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1em;
+    
+}
+.btn{
+    background-color: black;
+    border: 0.1em solid orange;
+    border-radius: 25px;
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
